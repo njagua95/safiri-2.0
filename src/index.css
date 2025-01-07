@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  cursor: none;
+}
+
+@media (max-width: 768px) {
+  html {
+    cursor: auto;
+  }
+}
+
+body {
+  @apply bg-amber-50;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom hover effects */
+.hover-trigger {
+  @apply transition-all duration-300;
+}
+
+.hover-trigger:hover {
+  @apply transform scale-105;
+}
